@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Bootstrap CSS  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Decors</title>
+    <title>Décors</title>
     <!-- bootstrap en local -->
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
@@ -49,40 +49,66 @@
             <!-- fermeture DIV Container -->
     </nav>
             <!-- Le premier container avec notre carousel (ou diaporama ou slider) -->
-    <div class="container">
+    <div class="container mt-4">
         <div class="row">
 
             <div class="col-12">
                 <!-- Le carousel -->
 
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div id="monCarousel" class="carousel slide bg-dark" data-ride="carousel">
+                    <ol class="carousel-indicators bg-dark">
+                        <li data-target="#monCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#monCarousel" data-slide-to="1"></li>
+                        <li data-target="#monCarousel" data-slide-to="2"></li>
+                      </ol>
+                    
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                          <img src="img/1920x500.gif" class="d-block w-100" alt="...">
+                            <img src="img/01.jpg" class="d-block w-100" alt="décors">
+                            <div class="carousel-caption d-none d-md-block bg- #80 ">
+                     
+                                <h5>Décor-1</h5>
+                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                              </div>
+                      </div>
+                      <div class="carousel-item" data-interval="20000">
+                            <img src="img/02.jpg" class="d-block w-100" alt="décors">
+                            <div class="carousel-caption d-none d-md-block bg- rgba(0, 0, 255, 0.5);
+                        ">
+                                <h5>Décor-2</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                              </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="img/1920x500.gif" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/1920x500.gif" class="d-block w-100" alt="...">
+                            <img src="img/03.jpg" class="d-block w-100" alt="décors">
+                            <div class="carousel-caption d-none d-md-block bg-i rgba(0, 0, 255, 0.5);
+                        ">
+                                <h5>Décor-3</h5>
+                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                              </div>
                       </div>
                     </div>
+                    <!-- Les flèches de control du carousel -->
+
+                    <a class="carousel-control-prev" href="#monCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Precedent</span>
+                      </a>
+                      <a class="carousel-control-next" href="#monCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Suivante</span>
+                      </a>
+                      <!-- Fermeture DIV ID carousel -->
                   </div>
 
 
             </div>
 
-
-
         </div>
-
 
         <!-- Fermeture container du slider -->
     </div>
 
-    
-      
-    
 
     <script src="js/jquery-3.4.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
