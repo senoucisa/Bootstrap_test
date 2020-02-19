@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +9,15 @@
     <title>Décors</title>
     <!-- bootstrap en local -->
     <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+      .rose {
+        background: pink;
+      }
+    
+    .bleu {
+      background: lightblue;
+    }
+    </style>
 </head>
 <body>
     <!-- La nav bar de notre site -->
@@ -36,10 +46,10 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="page1.html">Page1</a>
-                    <a class="dropdown-item" href="#">Page2</a>
-                    <a class="dropdown-item" href="#">Page3</a>
-                    <a  class="dropdown-item" href="">Page4</a>
-                    <a  class="dropdown-item" href="">Page5</a>
+                    <a class="dropdown-item" href="page2.html">Grille,exemples</a>
+                    <a class="dropdown-item" href="page3.html">Page3</a>
+                    <a  class="dropdown-item" href="page4.html">Page4</a>
+                    <a  class="dropdown-item" href="page5.html">Page5</a>
                   </div>
                 </li>
               </ul>
@@ -107,8 +117,184 @@
         </div>
 
         <!-- Fermeture container du slider -->
+        <hr>
     </div>
 
+    <!-- Le second container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-2 col-lg-4">
+              <img src="img/40X40.gif" alt="image ronde" class="rounded-circle">
+
+            </div>
+            <div class="col-10 col-lg-8 ml-1">
+              <h5>Nos motifs</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-2 col-lg-4">
+              <img src="img/40X40.gif" alt="image ronde" class="rounded-circle">
+
+            </div>
+            <div class="col-10 col-lg-8 ml-1">
+              <h5>Nos produits</h5>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-2 col-lg-4">
+              <img src="img/40X40.gif" alt="image ronde" class="rounded-circle">
+
+            </div>
+            <div class="col-10 col-lg-8 ml-1">
+              <h5>Nos promos</h5>
+            </div>
+          </div>
+         
+        </div>
+      </div>  
+      <!-- fermeture row -->
+     <hr>
+    </div>
+    <!-- fermeture container2 -->
+
+
+    <!-- 3eme container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">A LA UNE</h2>
+          <hr>
+        </div>
+      </div>
+      <!-- Fermeture de la class row -->
+    </div>
+    <!-- Fermeture de la div container 3 -->
+
+    <!-- 4eme container  -->
+    <!-- <div class="card" style="width: 18rem;">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+      </ul>
+    </div> -->
+
+    <div class="container">
+      <div class="row rose p-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/img1.jpg" alt="escalier" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center">5 SORTES DE MEDIAS</h5>
+              <ul class="list-group list-group-flush">
+								<li class="list-group-item">les très petits genre smartphones en mode portrait (moins de 576px),</li class="list-group-item">
+								<li class="list-group-item">les petits genre smartphones en mode paysage (plus de 576px mais moins de 768px),</li>
+								<li class="list-group-item">les moyens genre tablettes (plus de 768px mais moins de 992px),</li>
+								<li class="list-group-item">les grands (plus de 992px mais moins de 1200px),</li>
+								<li class="list-group-item">les très grands (plus de 1200px).</li>
+							</ul>
+              <a href="#" class="btn-danger">En savoir plus</a>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/img2.jpg" alt="sac a dos" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title text-center">LES NOMS DES CLASSE</h5>
+              <ul class="list-group list-group-flush">
+								<li class="list-group-item">rien pour les très petits écrans (valeur de référence)</li>
+								<li class="list-group-item">sm pour small,</li>
+								<li class="list-group-item">md pour medium,</li>
+								<li class="list-group-item">lg pour large,</li>
+								<li class="list-group-item">xl pour x-large.</li>
+							</ul>
+              <a href="#" class="btn-danger">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div id="carouselCard" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="img/img1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/img2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="img/img3.jpg" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselCard" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselCard" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">LES COLONNES</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Une colonne : col-1 ou col-sm-1 ou col-md-1 ou col-lg-1 ou col-xl-1</li>
+                <li  class="list-group-item">Deux colonnes : col-2 ou col-sm-2 ou col-md-2 ou col-lg-2 ou col-xl-2</li>
+                <li class="list-group-item">…</li>
+                <li class="list-group-item">Douze colonnes : col-12 ou col-sm-12 ou col-md-12 ou col-lg-12 ou col-xl-12</li>
+              </ul>
+              <a href="#" class="btn-danger">En savoir plus</a>
+            </div>
+
+          </div>
+        </div>
+        <!-- Fermeture de la row  -->
+      </div>
+      <hr>
+      
+    </div>
+    <!-- container 5 -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center">Produits à la une</h2>
+        </div>
+        <hr>
+      </div>
+    </div>
+      <!-- 6eme container -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis animi delectus sint a odit quisquam doloremque voluptate, quasi nobis culpa praesentium. Tenetur praesentium ad minima tempora ullam iusto quia adipisci!
+          </div>
+          <div class="col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis animi delectus sint a odit quisquam doloremque voluptate, quasi nobis culpa praesentium. Tenetur praesentium ad minima tempora ullam iusto quia adipisci!
+          </div>
+          <div class="col-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis animi delectus sint a odit quisquam doloremque voluptate, quasi nobis culpa praesentium. Tenetur praesentium ad minima tempora ullam iusto quia adipisci!
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- fermeture div row -->
+    
+      <!-- fermeture div container -->
+    
+    <!-- Fermeture div container 4 -->
+<!-- 
     <div class="container-fluid mt-4">
 
       <div class="row">
@@ -127,7 +313,7 @@
         <div class="col-4 bg-warning">colonne</div>
       
       </div>
-    </div>
+    </div> -->
 
 
     <script src="js/jquery-3.4.1.slim.min.js"></script>
